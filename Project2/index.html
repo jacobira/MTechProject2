@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do App, JBDevelopment</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/e2668ca62d.js"></script>
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="action.js" defer></script>
+</head>
+<body>
+    <div class="heading">
+        <div class="logoBox">
+
+        </div>
+    </div>
+
+    <div id="pageContent" class="pgContent">
+
+        <div class="listMenu">
+            <div class="topOfListMenu">
+                <div id="listCreate" class="createList" onclick="createList()">
+                    Create List
+                </div>
+            </div>
+            <div class="listMenuContent">
+                <div id="list1" class="list" onclick='viewList("#List1Container")'>
+                    <div class="listTitle" contenteditable="true">
+                        (New List)
+                    </div>
+                    <div id="trashList1" class="trashListBtn fa fa-trash" onclick="trashItList('#list1','#List1Container',)">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="List1Container" class="container">
+            <div class="addItemContainer">
+                <div id="addItemBtn1" class="addItemBtn" onclick='taskAdd("#List1Container")'>
+                    Add Task
+                </div>
+            </div>
+
+            <div id="box1" class="itemBox">
+                <div class="leftArea">
+                    <div id="check1" class="checkBox" onclick="markComplete('#check1', '#box1')">
+
+                    </div>
+                </div>
+                <div id="taskName1-1" class="rightArea" contenteditable="true">
+                    (Task Name)
+                </div>
+                <div id="taskNotes1-1" class="itemInfo" contenteditable="true">
+                    (Task Notes)
+                </div>
+                <div class="fa fa-trash" onclick="trashItTasks('#box1')">
+
+                </div>
+            </div>
+
+            <div id="box2" class="itemBox">
+                <div class="leftArea">
+                    <div id="check2" class="checkBox" onclick="markComplete('#check2', '#box2')">
+
+                    </div>
+                </div>
+                <div id="taskName1-2" class="rightArea" contenteditable="true">
+                    (Task Name)
+                </div>
+                <div id="taskNotes1-2" class="itemInfo" contenteditable="true">
+                    (Task Notes)
+                </div>
+                <div class="fa fa-trash" onclick="trashItTasks('#box2')">
+
+                </div>
+            </div>
+
+            <div id="box3" class="itemBox">
+                <div class="leftArea">
+                    <div id="check3" class="checkBox" onclick="markComplete('#check3', '#box3')">
+
+                    </div>
+                </div>
+                <div id="taskName1-3" class="rightArea" contenteditable="true">
+                    (Task Name)
+                </div>
+                <div id="taskNotes1-3" class="itemInfo" contenteditable="true">
+                    (Task Notes)
+                </div>
+                <div class="fa fa-trash" onclick="trashItTasks('#box3')">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

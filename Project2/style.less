@@ -1,0 +1,193 @@
+html {
+  height: 100%;
+  width: 100%;
+  min-width: 700px;
+
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    .hidden {
+      display: none;
+    }
+
+    .heading {
+      height: 10%;
+      min-height: 60px;
+      max-height: 200px;
+      width: 100%;
+      background-color: gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .logoBox {
+        height: 50px;
+        width: 140px;
+        //margin-left: 10px;
+        background-image: url("media/youTask.png");
+        background-size: cover;
+      }
+    }
+
+    .pgContent{
+      display: flex;
+      justify-content: space-between;
+      height: 90%;
+      width: 100%;
+
+
+
+      .listMenu {
+        width: 20%;
+        height: 100%;
+        min-height: 635px;
+        background-color: lightgray;
+
+        .topOfListMenu {
+
+          .createList {
+            height: 30px;
+            width: 80px;
+            background-color: #0071BC;
+            font-family: 'Indie Flower', cursive;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            margin-top: 10px;
+            color: lightgray;
+            cursor: pointer;
+          }
+        }
+        .listMenuContent {
+          margin-top: 10px;
+          margin-left: 10px;
+
+          .list{
+            height: 40px;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 3px;
+
+            .listTitle{
+              margin-left: 5px;
+              font-family: 'Indie Flower', cursive;
+              font-size: 18px;
+              width: 75%;
+            }
+            .fa-trash {
+              margin-left: 10px;
+              margin-right: 10px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .container {
+        width: 70%;
+        height: 100%;
+        min-height: 635px;
+        margin-right: 5%;
+
+        h3{
+          font-family: 'Indie Flower', cursive;
+          margin-top: 10px;
+          margin-bottom: 5px;
+        }
+
+        .addItemContainer {
+          height: 50px;
+          display: flex;
+          align-items: center;
+
+          .addItemBtn {
+            height: 30px;
+            width: 80px;
+            background-color: #0071BC;
+            font-family: 'Indie Flower', cursive;
+            color: lightgray;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+          }
+
+        }
+
+          .itemBox {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            margin-bottom: 10px;
+            background-color: lightgray;
+            border-radius: 3px;
+
+            .leftArea {
+              width: 60px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+
+              .checkBox {
+                height: 30px;
+                width: 30px;
+                margin-left: 15px;
+                margin-right: 15px;
+                cursor: pointer;
+                background-color: white;
+                border-radius: 3px;
+              }
+              .fa-check {
+                font-size: 30px;
+                color: green;
+              }
+
+            }
+            .rightArea {
+              height: 30px;
+              width: 25%;
+              display: flex;
+              align-items: center;
+              font-family: 'Indie Flower', cursive;
+              font-size: 18px;
+              margin-right: 10px;
+            }
+
+            .itemInfo {
+              width: 70%;
+              height: 30px;
+              background-color: white;
+              border-radius: 3px;
+              font-size: 14px;
+            }
+
+            .fa-trash {
+              height: 30px;
+              width: 30px;
+              margin-left: 3%;
+              margin-right: 3%;
+              color: #0071BC;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+            }
+
+          }
+        }
+        .highlight {
+           border: 1px solid green;
+         }
+
+      }
+  }
+}
